@@ -1,11 +1,11 @@
 # knn-UFLA-IA
 
 
-##Resultados
+## Resultados
 
-###Iris
+### Iris
 
-####Matriz de confusão
+#### Matriz de confusão
 
 para k = 1
 | class |Iris-setosa | Iris-versicolor | Iris-virginica |
@@ -35,9 +35,9 @@ para k = 7
 | Iris-versicolor | 0 | 8 | 0 |
 | Iris-virginica | 0 | 2 | 10 |
 
-###Spam
+### Spam
 
-####Matriz de confusão
+#### Matriz de confusão
 
 para k = 1
 | class |1 | 0 |
