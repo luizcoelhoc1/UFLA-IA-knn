@@ -4,26 +4,8 @@ import csv
 SPAM_INDEX = 57
 IRIS_CLASS_INDEX = 4
 
-mainSpam()
 
-def mainIris():
-    a = Agent(IRIS_CLASS_INDEX)
-    t = fileToIris("iris.data")
-    dataForTraining, dataForPredict = splitData(t, 5) #5 = 20% and 80% 
-    a.training(dataForTraining)
-    for k in range(1,9,2):
-        print("para k = " + str(k))
-        printMatrixOnMd(getConfusionMatrix(a, dataForPredict, k))
 
-def mainSpam():
-    a = Agent(SPAM_INDEX)
-    t = fileToInfoEmails("spambase.data")
-    dataForTraining, dataForPredict = splitData(t, 5) #5 = 20% and 80% 
-    a.training(dataForTraining)
-
-    for k in range(1,9,2):
-        print("para k = " + str(k))
-        printMatrixOnMd(getConfusionMatrix(a, dataForPredict, k))
 
 """
 calc euclidian distance between two lists (or tuples) 
@@ -163,3 +145,23 @@ def printMatrixOnMd(matrix):
         
     #print string    
     print(string[:-2])
+
+def mainIris():
+    a = Agent(IRIS_CLASS_INDEX)
+    t = fileToIris("iris.data")
+    dataForTraining, dataForPredict = splitData(t, 5) #5 = 20% and 80% 
+    a.training(dataForTraining)
+    for k in range(1,9,2):
+        print("para k = " + str(k))
+        printMatrixOnMd(getConfusionMatrix(a, dataForPredict, k))
+
+def mainSpam():
+    a = Agent(SPAM_INDEX)
+    t = fileToInfoEmails("spambase.data")
+    dataForTraining, dataForPredict = splitData(t, 5) #5 = 20% and 80% 
+    a.training(dataForTraining)
+
+    for k in range(1,9,2):
+        print("para k = " + str(k))
+        printMatrixOnMd(getConfusionMatrix(a, dataForPredict, k))
+mainIris()
