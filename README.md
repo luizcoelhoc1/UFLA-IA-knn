@@ -2,8 +2,11 @@
 
 
 ##Resultados
+
 ###Iris
+
 ####Matriz de confusão
+
 para k = 1
 | class |Iris-setosa | Iris-versicolor | Iris-virginica |
 | :-------------: | :-------------: | :-------------: | :-------------: |
@@ -33,7 +36,9 @@ para k = 7
 | Iris-virginica | 0 | 2 | 10 |
 
 ###Spam
+
 ####Matriz de confusão
+
 para k = 1
 | class |1 | 0 |
 | :-------------: | :-------------: | :-------------: |
